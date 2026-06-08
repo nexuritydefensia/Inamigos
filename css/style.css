@@ -1,0 +1,648 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8f9fa;
+color:#333;
+line-height:1.6;
+}
+
+/* Navbar */
+
+nav{
+position:sticky;
+top:0;
+z-index:1000;
+background:#fff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo-container{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo-container img{
+width:50px;
+height:50px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.logo{
+font-size:1.4rem;
+font-weight:bold;
+color:#0d6efd;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover
+
+/* Hero Section */
+
+.hero{
+min-height:100vh;
+background:
+linear-gradient(
+rgba(0,0,0,0.65),
+rgba(0,0,0,0.65)
+),
+url('../images/hero-banner.jpg');
+
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:80px 20px;
+
+}
+
+.hero-content{
+max-width:1100px;
+width:100%;
+padding:0 40px;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:25px;
+line-height:1.2;
+}
+
+.hero p{
+font-size:1.2rem;
+line-height:1.8;
+max-width:900px;
+margin:0 auto 25px auto;
+}
+
+/* Buttons */
+
+.btn{
+display:inline-block;
+background:#0d6efd;
+color:white;
+text-decoration:none;
+padding:12px 25px;
+border-radius:6px;
+margin:5px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+background:#084fc7;
+}
+
+.btn2{
+background:#198754;
+}
+
+.btn2:hover
+
+/* Hero Statistics */
+
+.hero-stats{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-top:50px;
+flex-wrap:wrap;
+}
+
+.hero-stat{
+background:rgba(255,255,255,0.15);
+border:1px solid rgba(255,255,255,0.2);
+backdrop-filter:blur(8px);
+padding:20px 30px;
+border-radius:15px;
+min-width:180px;
+}
+
+.hero-stat h2{
+font-size:2.2rem;
+margin-bottom:8px;
+}
+
+.hero-stat p{
+margin:0;
+font-size:1rem;
+}
+
+/* Section Titles */
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:40px;
+color:#0d6efd;
+}
+
+/* About Section */
+
+.about{
+display:flex;
+gap:60px;
+align-items:center;
+padding:100px 10%;
+background:white;
+}
+
+.about-img{
+flex:1;
+}
+
+.about-img img{
+width:100%;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.about-text{
+flex:2;
+background:#f8f9fa;
+padding:30px;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.about-text h2{
+margin-bottom:20px;
+color:#0d6efd;
+}
+
+.about-text p{
+margin-bottom:18px;
+line-height:1.9;
+text-align:justify;
+}
+
+/* Projects */
+
+#projects{
+padding:80px 8%;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+color:#0d6efd;
+}
+
+.card p{
+padding:0 15px 20px;
+}
+
+/* Impact */
+
+.impact{
+background:white;
+padding:80px 8%;
+}
+
+.impact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.impact-box{
+background:#f8f9fa;
+padding:25px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.impact-box h3{
+color:#198754;
+margin-bottom:10px;
+}
+
+/* Statistics */
+
+.stats{
+padding:70px 8%;
+background:#0d6efd;
+color:white;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.stat h2{
+font-size:2.5rem;
+}
+
+.stat p{
+margin-top:10px;
+}
+
+/* Gallery */
+
+#gallery{
+padding:80px 8%;
+}
+
+#gallery .section-title{
+font-size:3rem;
+font-weight:700;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+transition:0.3s;
+cursor:pointer;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* Contact */
+
+.contact-section{
+padding:80px 8%;
+background:#f8f9fa;
+}
+
+.contact-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+margin-top:40px;
+}
+
+.contact-info,
+.contact-action{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+.contact-info h3,
+.contact-action h3{
+color:#0d6efd;
+margin-bottom:20px;
+}
+
+/* Footer */
+
+footer{
+background:#212529;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+footer h3{
+margin-bottom:15px;
+}
+
+footer p{
+margin:10px 0;
+}
+
+.footer-links{
+margin:20px 0;
+}
+
+.footer-links a{
+color:white;
+text-decoration:none;
+margin:0 12px;
+transition:0.3s;
+}
+
+.footer-links a:hover
+
+.copyright{
+margin-top:20px;
+font-size:0.9rem;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.hero p{
+    font-size:1rem;
+}
+
+.hero-stat{
+    min-width:140px;
+    padding:15px 20px;
+}
+
+.hero-stat h2{
+    font-size:1.8rem;
+}
+
+.about{
+    flex-direction:column;
+}
+
+.contact-container{
+    grid-template-columns:1fr;
+}
+
+.section-title{
+    font-size:2rem;
+}
+
+#gallery .section-title{
+    font-size:2.5rem;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE ONLY
+========================= */
+
+@media screen and (max-width:768px){
+
+    /* Navbar */
+
+    nav{
+        flex-direction:column;
+        padding:15px;
+        gap:12px;
+    }
+
+    .logo-container{
+        justify-content:center;
+        text-align:center;
+    }
+
+    .logo{
+        font-size:1.2rem;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+    }
+
+    nav ul li a{
+        font-size:14px;
+    }
+
+    /* Hero */
+
+    .hero{
+        min-height:auto;
+        padding:100px 15px 60px;
+    }
+
+    .hero-content{
+        padding:0;
+    }
+
+    .hero h1{
+        font-size:2rem;
+        line-height:1.3;
+        margin-bottom:20px;
+    }
+
+    .hero p{
+        font-size:0.95rem;
+        line-height:1.7;
+    }
+
+    .hero-buttons{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+    }
+
+    .btn{
+        width:220px;
+        text-align:center;
+    }
+
+    /* Hero Stats */
+
+    .hero-stats{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:12px;
+        margin-top:30px;
+    }
+
+    .hero-stat{
+        width:100%;
+        min-width:auto;
+        padding:15px;
+    }
+
+    .hero-stat h2{
+        font-size:1.6rem;
+    }
+
+    /* About */
+
+    .about{
+        flex-direction:column;
+        gap:30px;
+        padding:60px 20px;
+    }
+
+    .about-text{
+        padding:20px;
+    }
+
+    .about-text p{
+        text-align:left;
+    }
+
+    /* Common Section Padding */
+
+    #projects,
+    .impact,
+    #gallery,
+    .contact-section{
+        padding:60px 20px;
+    }
+
+    .section-title{
+        font-size:2rem;
+        margin-bottom:30px;
+    }
+
+    /* Projects */
+
+    .projects{
+        grid-template-columns:1fr;
+    }
+
+    .card img{
+        height:220px;
+    }
+
+    /* Impact */
+
+    .impact-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* Stats */
+
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+        padding:50px 20px;
+        gap:15px;
+    }
+
+    .stat h2{
+        font-size:2rem;
+    }
+
+    /* Gallery */
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .gallery img{
+        height:220px;
+    }
+
+    /* Contact */
+
+    .contact-container{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    /* Footer */
+
+    .footer-links{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+    }
+
+    .footer-links a{
+        margin:0;
+    }
+}
+
+
+/* Extra Small Phones */
+
+@media screen and (max-width:480px){
+
+    .hero h1{
+        font-size:1.7rem;
+    }
+
+    .hero p{
+        font-size:0.9rem;
+    }
+
+    .hero-stats{
+        grid-template-columns:1fr;
+    }
+
+    .stats{
+        grid-template-columns:1fr;
+    }
+
+    .btn{
+        width:100%;
+        max-width:250px;
+    }
+
+    .logo{
+        font-size:1rem;
+    }
+
+    nav ul li a{
+        font-size:13px;
+    }
+
+    .section-title{
+        font-size:1.8rem;
+    }
+}
+}
